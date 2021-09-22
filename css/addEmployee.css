@@ -126,3 +126,38 @@ select {
   background-color: transparent;
   margin: 0 0.15rem;
 }
+/* Buttons */
+.button-parent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #969696;
+    border-radius: 5px;
+    background: #f5f5f5;
+  }
+  .cancelButton {
+    text-decoration: none;
+    text-align: center;
+  }
+  .submitButton {
+    margin-right: 30px;
+  }
+  a.button:hover, .resetButton:hover {
+    background: #808080;
+    color: white;
+  }
+  .submitButton:hover {
+    background-color: #82a70c;
+    color: white;
+  }
