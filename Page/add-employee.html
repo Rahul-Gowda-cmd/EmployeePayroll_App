@@ -105,6 +105,93 @@
               />
             </label>
           </div>
+          <!-- Input fields: Gender-->
+        <div class="row-content" style="margin-top: 30px">
+          <label class="label text" for="gender">Gender</label>
+          <div class="gender-label">
+            <input type="radio" id="male" name="gender" value="Male" required />
+            <label for="Male">Male</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+              required
+            />
+            <label for="Female">Female</label>
+          </div>
+        </div>
+
+        <!-- Input fields: Department -->
+        <div class="row-content" style="margin-top: 30px">
+          <label class="label text" for="department">Department</label>
+          <div>
+            <input
+              type="checkbox"
+              id="hr"
+              name="department"
+              value="HR"
+              style="margin-right: 6px"
+            />
+            <label class="text" for="hr" style="margin-right: 20px">HR</label>
+            <input
+              type="checkbox"
+              id="sales"
+              name="department"
+              value="Sales"
+              style="margin-right: 6px"
+            />
+            <label class="text" for="sales" style="margin-right: 20px"
+              >Sales</label
+            >
+            <input
+              type="checkbox"
+              id="finance"
+              name="department"
+              value="Finance"
+              style="margin-right: 6px"
+            />
+            <label class="text" for="finance" style="margin-right: 20px"
+              >Finance</label
+            >
+            <input
+              type="checkbox"
+              id="engineer"
+              name="department"
+              value="Engineer"
+              style="margin-right: 6px"
+            />
+            <label class="text" for="engineer" style="margin-right: 20px"
+              >Engineer</label
+            >
+            <input
+              type="checkbox"
+              id="others"
+              name="department"
+              value="Others"
+              style="margin-right: 6px"
+            />
+            <label class="text" for="others" style="margin-right: 20px"
+              >Others</label
+            >
+          </div>
+        </div>
+
+        <!-- Input fields: Salary-->
+        <div class="row-content" style="margin-top: 30px">
+          <label class="label text" for="salary">Choose Salary</label>
+          <input
+            class="input"
+            type="range"
+            name="salary"
+            id="salary"
+            min="300000"
+            max="500000"
+            step="100"
+            value="400000"
+          />
+          <output class="salary-output" for="salary">400000</output>
+        </div>
       </form>
     </div>
   </body>

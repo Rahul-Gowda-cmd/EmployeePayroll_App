@@ -90,20 +90,27 @@ html body {
 }
 /* Profile pic */
 .profile-radio-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .profile {
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 8px;
-  }
-  .profile-label {
-    margin-right: 20px;
-  }
-  .profile-radio-content > label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.profile {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+.profile-label {
+  margin-right: 20px;
+}
+.profile-radio-content > label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Gender */
+.gender-label {
+  color: #42515f;
+}
+.gender-label #female {
+  margin-left: 2rem;
 }
