@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/Home.css" />
+    <script defer type="text/javascript" src="../js/site_properties.js"></script>
+    <script defer type="text/javascript" src="../js/Home.js"> </script>
+    <script defer type="text/javascript" src="../js/utility.js"></script>
+    <title>Employee Payroll System</title>
+  </head>
+  <body>
+    <!-- uc1 -->
+    <header class="header-content header">
+      <div class="logo-content" onclick="location.href='./Home.html'">
+        <img src="../assets/images/logo.png" alt="Logo" />
+        <div>
+          <span class="emp-text">EMPLOYEE</span><br />
+          <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- uc2 -->
+    <div class="main-content">
+        <div class="header-content sub-main-content">
+            <div class="emp-detail-text">
+                Employee Details <div class="emp-count">0</div>
+            </div>
+
+            <div onclick="location.href='./add-employee.html'" class="add-button button">
+                <div>Add User</div>
+            </div>
+              </a>
+        </div>
+        <!-- uc3 -->
+        <div class="table-main">
+            <table class="table" id="display">
+              <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+              </tr>
+              <tr>
+                <td><img class="profile" src="../assets/profile-images/Ellipse -2.png" alt=""></td>
+                <td>Rahul</td>
+                <td>Male</td>
+                <td>
+                  <div class="dept-label">HR</div>
+                  <div class="dept-label">Finance</div>
+                </td>
+                <td>300000</td>
+                <td>1 sep 2021</td>
+                <td>
+                  <img src="../assets/icons/delete-black-18dp.svg" alt="delete">
+                  <img src="../assets/icons/create-black-18dp.svg" alt="create">
+                </td>
+              </tr>
+            </table>
+        </div>
+    </div>
+  </body>
+</html>

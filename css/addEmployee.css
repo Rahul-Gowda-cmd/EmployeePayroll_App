@@ -1,3 +1,4 @@
+/* uc1 */
 * {
   box-sizing: border-box;
 }
@@ -5,7 +6,6 @@ html body {
   margin: 0;
   height: 100%;
 }
-/* Header */
 .header {
   padding: 15px 0px;
   background-color: hsl(0, 0%, 100%);
@@ -37,7 +37,8 @@ html body {
 .emp-payroll {
   color: #42515f;
 }
-/* Form */
+
+/* uc2 */
 .form-content {
   min-height: calc(100%-80px);
   background-color: #eee;
@@ -88,12 +89,13 @@ html body {
   border-radius: 4px;
   resize: vertical;
 }
-/* Profile pic */
 .profile-radio-content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+/* uc3 */
 .profile {
   width: 40px;
   border-radius: 50%;
@@ -107,116 +109,70 @@ html body {
   flex-direction: row;
   align-items: center;
 }
-/* Gender */
-.gender-label {
-  color: #42515f;
-}
-.gender-label #female {
-  margin-left: 2rem;
-}
-/* Date */
+/* uc5 */
 select {
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px; 
+  border-radius: 4px;
   resize: vertical;
   font: normal normal normal 16px Roboto;
   letter-spacing: 0px;
   color: #42515f;
   background-color: transparent;
-  margin: 0 0.15rem;
 }
-/* Buttons */
+.department {
+  margin-left: 30px;
+}
+/* uc6 */
 .button-parent {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* uc6 ext */
+@media only screen and (max-width: 600px) {
+  .form {
+    margin-top: 10px;
+  }
+  .submit-reset {
+    width: 100%;
     display: flex;
-    margin-bottom: 10px;
+    flex-grow: 1;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    margin-top: 30px;
-  }
-  .button {
-    font-size: 20px;
-    font-family: Roboto;
-    letter-spacing: 0px;
-    color: #42515f;
-    font-weight: 400;
-    cursor: pointer;
-    padding: 12px;
-    background: transparent;
-    border: 2px solid #969696;
-    border-radius: 5px;
-    background: #f5f5f5;
-  }
-  .cancelButton {
-    text-decoration: none;
-    text-align: center;
+    margin-bottom: 20px;
   }
   .submitButton {
-    margin-right: 30px;
+    margin: 0;
   }
-  a.button:hover, .resetButton:hover {
-    background: #808080;
-    color: white;
+  .button-parent {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
-  .submitButton:hover {
-    background-color: #82a70c;
-    color: white;
+}
+@media only screen and (max-width: 960px) {
+  .cancelButton {
+    margin-left: 0px;
   }
-  /* Media Queries */
-@media only screen and (min-width: 726px) {
-    .salary-group input {
-      min-width: 350px;
-    }
+  .form {
+    width: 85%;
+    padding: 44px 20px;
   }
-  @media only screen and (max-width: 600px) {
-    .form {
-      margin-top: 10px;
-    }
-    .form-head {
-      text-align: center;
-    }
-    .label {
-      min-width: 100px;
-    }
-    .profile-radio-content {
-      grid-template-columns: 1fr 2fr;
-      gap: 0.5rem;
-    }
-    .gender-label {
-      gap: 0.5rem;
-    }
-    .department-group {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
-    .salary-group {
-      display: flex;
-      flex-direction: column;
-    }
-    select {
-      margin-bottom: 0.5rem;
-    }
-    .submit-reset {
-      width: 100%;
-      display: flex;
-      flex-grow: 1;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      margin-bottom: 20px;
-    }
-    .submitButton {
-      margin: 0;
-    }
-    .button-parent {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-    }
+  .profile-label {
+    margin-right: 0px;
   }
-  @media only screen and (max-width: 960px) {
-    .form {
-      width: 85%;
-      padding: 44px 20px;
-    }
-    .profile-label {
-      margin-right: 0px;
-    }
+}
+@media only screen and (max-width: 320px) {
+  .label {
+    min-width: 50px;
   }
+}
+/* uc10 */
+error-output {
+  margin-left: 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
