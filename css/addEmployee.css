@@ -161,3 +161,12 @@ select {
     background-color: #82a70c;
     color: white;
   }
+  @media only screen and (max-width: 960px) {
+    .form {
+      width: 85%;
+      padding: 44px 20px;
+    }
+    .profile-label {
+      margin-right: 0px;
+    }
+  }
