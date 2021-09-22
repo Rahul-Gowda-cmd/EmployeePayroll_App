@@ -13,5 +13,37 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="../css/addEmployee.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="header-content header">
+      <div class="logo-content" onclick="location.href='./index.html'">
+        <img src="../assets/images/logo.png" alt="Logo" />
+        <div>
+          <span class="emp-text">EMPLOYEE</span><br />
+          <span class="emp-text emp-payroll">PAYROLL</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Form -->
+    <div class="form-content">
+      <form class="form" action="#">
+        <!-- Form header -->
+        <div class="form-head">Employee Payroll Form</div>
+
+        <!-- Input fields: Name -->
+        <div class="row-content">
+          <label for="name" class="label text">Name</label>
+          <input
+            type="text"
+            class="input"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
